@@ -10,8 +10,8 @@ public class CurrentTime {
   /**
    * Returns current system time in given format, like HH:mm
    *
-   * param timeFormat Desirable format for current time output
-   * returns current time
+   * Parametr timeFormat desirable format for current time output
+   * Returns current time
    */
   public static String getTime (String timeFormat) {
     Calendar cal = Calendar.getInstance();
