@@ -10,7 +10,7 @@ public class CurrentTime {
   /**
    * Returns current system time in given format, like HH:mm
    *
-   * Parametr timeFormat desirable format for current time output
+   * Parameter timeFormat desirable format for current time output
    * Returns current time
    */
   public static String getTime (String timeFormat) {
