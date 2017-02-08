@@ -13,7 +13,7 @@ public class PrintValueToConsole {
    */
   public void printList(List valueList) {
     for (Object value : valueList) {
-      value.toString();
+      System.out.println(value.toString());
     }
   }
 }
