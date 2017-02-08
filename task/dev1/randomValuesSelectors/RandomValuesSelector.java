@@ -5,10 +5,12 @@ import java.util.List;
 import java.util.Random;
 
 /**
- * Select random values
+ * Provides method for selecting random values from input data
  */
 public class RandomValuesSelector {
-
+  private static final String MESSAGE_NOT_ENOUGH_VALUES = "Not enough values for selection!";
+  private static final String MESSAGE_NEGATIVE_NUMBER_OF_VALUES =
+      "Negative number of items to elect!";
   /**
    * Select random value from input list
    * @param valueList - elements for sampling
@@ -16,9 +18,11 @@ public class RandomValuesSelector {
    * @return List - list with selected random values
    */
   public List select(List valueList, int numberOfValues) {
-    if (valueList == null || valueList.size() < numberOfValues || numberOfValues < 0) {
-      // TODO: add to log a reason
-      return null;
+    if (valueList.size() < numberOfValues) {
+      throw new IllegalArgumentException(MESSAGE_NOT_ENOUGH_VALUES);
+    }
+    if (numberOfValues < 0){
+      throw new IllegalArgumentException(MESSAGE_NEGATIVE_NUMBER_OF_VALUES);
     }
     Random random = new Random();
     List selectedOptionsList = new ArrayList();

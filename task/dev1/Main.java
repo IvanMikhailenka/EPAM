@@ -12,6 +12,7 @@ import java.util.List;
  */
 public class Main {
   private static final int NUMBER_OF_VALUES = 3;
+
   /**
    * Method starts execution of the program
    * @param args - input options witch need to filter and print result
