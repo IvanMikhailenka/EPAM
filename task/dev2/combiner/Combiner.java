@@ -1,19 +1,20 @@
-package task.dev2.converter;
+package task.dev2.combiner;
 
 /**
- * Provides method for converting array of strings to String.
+ * Provides method for combine array of strings to String.
  */
-public class Converter {
+public class Combiner {
 
   /**
    * @param strings - input array of strings
    * @return String - converted string
    */
-  public String convertStringArrayToString(String[] strings) {
+  public String combineStringArrayToString(String[] strings) {
     StringBuilder builder = new StringBuilder();
     for (String string : strings) {
       builder.append(string);
     }
     return builder.toString();
   }
+
 }
