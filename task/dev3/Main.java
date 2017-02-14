@@ -1,6 +1,6 @@
 package task.dev3;
 
-import task.dev3.view.UserConsoleView;
+import task.dev3.controller.UserController;
 
 import java.io.IOException;
 
@@ -10,12 +10,12 @@ import java.io.IOException;
 public class Main {
 
   /**
-   * Method starts execution of the program and call view class
+   * Method starts execution of the program and call controller class
    */
   public static void main(String... args) {
-    UserConsoleView consoleView = new UserConsoleView();
+    UserController controller = new UserController();
     try {
-      consoleView.showConsoleDialog();
+      controller.showConsoleDialog();
     } catch (IOException e) {
       System.out.println("Sorry, program was stopped");
       //TODO: add stackTrace to log

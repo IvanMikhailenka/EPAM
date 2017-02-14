@@ -9,9 +9,9 @@ import task.dev3.service.oldestEntity.OldestEntity;
 import java.io.IOException;
 
 /**
- * Created by 1 on 14.02.2017.
+ * Provides methods to add show all options dialogue
  */
-class AllOptionsConsoleView {
+public class AllOptionsConsoleView {
   private static final String YES = "y";
   private Reader reader;
   private AverageAge averageAge;
@@ -23,7 +23,7 @@ class AllOptionsConsoleView {
    * Ask user that he wont to show all information and do it
    * @throws IOException - throws if problems with input data
    */
-  void showAllOptionsConsoleDialog() throws IOException {
+  public void showAllOptionsConsoleDialog() throws IOException {
     System.out.println("Do you want show all information? Y/N");
     if (reader.read().equalsIgnoreCase(YES)) {
       System.out.println("Average age " + averageAge.getAverageAge());

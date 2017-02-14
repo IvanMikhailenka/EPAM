@@ -9,14 +9,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by 1 on 14.02.2017.
+ * Provides methods to add user dialogue
  */
-class AddUserConsoleView {
+public class AddUserConsoleView {
   private static final String YES = "y";
   private List<User> userList = new ArrayList<>();
   private Reader reader;
 
-  AddUserConsoleView(Reader reader) {
+  public AddUserConsoleView(Reader reader) {
     this.reader = reader;
   }
 
@@ -24,7 +24,7 @@ class AddUserConsoleView {
    * Asks client if he wants to create a new user
    * @return List<User> - all created users by clients
    */
-  List<User> addUserConsoleDialog() {
+  public List<User> addUserConsoleDialog() {
     try {
       while (askClient().equalsIgnoreCase(YES)) {
         userList.add(newUser());
