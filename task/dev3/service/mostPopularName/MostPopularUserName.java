@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Provides method for getting most popular name by gender
+ * Provides method for getting most popular user name by gender
  */
 public class MostPopularUserName implements MostPopularName {
   private List<User> userList;

@@ -12,7 +12,7 @@ public class ConsoleReader implements Reader {
   /**
    * Read data from console and return them
    * @return String - input data
-   * @throws IOException - throws if there are problems
+   * @throws IOException - throws if there are problems with input
    */
   @Override
   public String read() throws IOException {

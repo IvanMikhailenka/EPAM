@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Provides methods to add user dialogue
+ * Provides methods to 'add user' dialogue
  */
 public class AddUserConsoleView {
   private static final String YES = "y";
@@ -22,7 +22,7 @@ public class AddUserConsoleView {
 
   /**
    * Asks client if he wants to create a new user
-   * @return List<User> - all created users by clients
+   * @return List<User> - all created users by client
    */
   public List<User> addUserConsoleDialog() {
     try {
@@ -32,6 +32,7 @@ public class AddUserConsoleView {
     } catch (Exception e) {
       System.out.println("Incorrect user data, please try again");
       addUserConsoleDialog();
+      // TODO: add stackTrace to log
     }
     return userList;
   }
@@ -71,7 +72,8 @@ public class AddUserConsoleView {
    * @throws IOException - throws if problems with input data
    */
   private int checkAndReturnAge(String age) throws IOException {
-    if (Integer.parseInt(age) < 0)
+    final int MIN_POSSIBLE_AGE = 0;
+    if (Integer.parseInt(age) < MIN_POSSIBLE_AGE)
       throw new IOException();
     return Integer.parseInt(age);
   }

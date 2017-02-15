@@ -9,7 +9,7 @@ public interface Reader {
 
   /**
    * Returns input string
-   * @throws IOException - throws if there are problems
+   * @throws IOException - throws if there are problems with input
    */
   String read() throws IOException;
 }

@@ -9,7 +9,7 @@ import task.dev3.service.oldestEntity.OldestEntity;
 import java.io.IOException;
 
 /**
- * Provides methods to add show all options dialogue
+ * Provides methods to show all options
  */
 public class AllOptionsConsoleView {
   private static final String YES = "y";
