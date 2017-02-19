@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Provides methods for calculate frequency of occurrence of a certain number of letters
  */
-public class FrequencyLettersStatistics implements EnglishSentenceRegex {
+public class FrequencyLettersStatistics {
   private Map<String, Float> frequenciesLetters = new HashMap<>();
   private Map<String, Float> frequencyLetters = new HashMap<>();
 
@@ -30,9 +30,9 @@ public class FrequencyLettersStatistics implements EnglishSentenceRegex {
    * @return Map - Key : piece of world, Value : it's frequencies of occurrence
    */
   private Map<String, Float> countFrequenciesLetters(String sentence, int amountLetters) {
-    String[] words = sentence.split(SPACE);
+    String[] words = sentence.split(EnglishSentenceRegex.SPACE);
     for (String word : words) {
-      word = word.replaceAll(ALL_EXCEPT_LETTERS_REGEX, "");
+      word = word.replaceAll(EnglishSentenceRegex.ALL_EXCEPT_LETTERS_REGEX, "");
       for (int i = 0; i < word.length(); i++) {
         int counter = 1;
         if (!(i + amountLetters <= word.length())) {

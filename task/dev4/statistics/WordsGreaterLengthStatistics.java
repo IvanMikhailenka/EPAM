@@ -3,7 +3,7 @@ package task.dev4.statistics;
 /**
  * Provides method for calculating amount of words greater some length
  */
-public class WordsGreaterLengthStatistics implements EnglishSentenceRegex {
+public class WordsGreaterLengthStatistics {
   private int amountWordsGreaterLength = 0;
 
   /**
@@ -12,9 +12,9 @@ public class WordsGreaterLengthStatistics implements EnglishSentenceRegex {
    * @param length - min length of words which need to calculate
    */
   public void calculateAmountWordsGreaterLength(String sentence, int length) {
-    String[] words = sentence.split(SPACE);
+    String[] words = sentence.split(EnglishSentenceRegex.SPACE);
     for (String word : words) {
-      word = word.replaceAll(ALL_EXCEPT_LETTERS_REGEX, "");
+      word = word.replaceAll(EnglishSentenceRegex.ALL_EXCEPT_LETTERS_REGEX, "");
       if (word.length() > length) {
         amountWordsGreaterLength++;
       }
