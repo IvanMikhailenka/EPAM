@@ -6,7 +6,7 @@ import task.dev6.date.dateFormat.DateFormat;
  * Provides method for getting seconds from date, for "ss" pattern
  * E.g. 2009-06-15T13:45:09 -> 09
  */
-public class secondsAs_ss extends DateFormat {
+public class SecondsAs_ss extends DateFormat {
 
   /**
    * Returns seconds as two-digit number

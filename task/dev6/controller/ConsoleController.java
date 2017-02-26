@@ -27,7 +27,7 @@ public class ConsoleController {
       String dateFormatPattern = consoleView.inputDateFormat();
       String result = formatReplacer.replaceDateFormats(dateFormatPattern, currentDate);
       consoleView.printData(result);
-    } catch (IOException exception) {
+    } catch (Exception exception) {
       logger.log(Level.SEVERE, EXCEPTION_MESSAGE, exception);
       startDialog();
     }

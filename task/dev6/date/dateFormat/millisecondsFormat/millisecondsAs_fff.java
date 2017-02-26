@@ -7,7 +7,7 @@ import task.dev6.date.dateFormat.DateFormat;
  * E.g. 2009-06-15T13:45:30.617 -> 617
  * E.g. 2009-06-15T13:45:30.050 -> 050
  */
-public class millisecondsAs_fff extends DateFormat {
+public class MillisecondsAs_fff extends DateFormat {
 
   /**
    * Returns milliseconds as three-digit number
