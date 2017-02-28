@@ -24,8 +24,8 @@ public class ConsoleView {
   }
 
   /**
-   * Asks user to enter a date format parser
-   * @return String - input date format parser
+   * Asks user to enter a date
+   * @return String - input date
    * @throws IOException - throws if problems with input data
    */
   public String inputDateFormat() throws IOException {
