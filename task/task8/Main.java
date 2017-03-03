@@ -23,7 +23,7 @@ public class Main {
       try {
         controller.startDialog();
         break;
-      } catch (IOException exception) {
+      } catch (Exception exception) {
         logger.log(Level.SEVERE, EXCEPTION_MESSAGE, exception);
       }
     }
