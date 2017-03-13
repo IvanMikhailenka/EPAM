@@ -4,6 +4,7 @@ import task.dev6.dateFormateReplacer.DateFormatReplacer;
 import task.dev6.reader.ConsoleReader;
 import task.dev6.view.ConsoleView;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
