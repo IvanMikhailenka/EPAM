@@ -7,11 +7,9 @@ import java.util.Date;
  * Provides information about input date
  */
 public class DateInformation {
-  private Date date;
   private Calendar calendar = Calendar.getInstance();
 
   public DateInformation(Date date) {
-    this.date = date;
     calendar.setTime(date);
   }
 

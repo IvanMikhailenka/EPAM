@@ -36,7 +36,6 @@ public class DateFormatReplacer {
       } else if (formats[iterator] == ESCAPE_SYMBOL) {
         addEscapeWord(formats);
       } else {
-        //addDataInFormat(formats);
         addDataInFormat(formats);
       }
     }
